@@ -22,3 +22,5 @@ Next phase is writing down this info into `Airtable` page with a help of [Airtab
 If the `Airtable.js` documentation may not look very **comprehensive**, a lot more **useful** docs can be found at https://airtable.com/api 
 
 ## Screencast  💻
+
+![fm-favs-scrapper-demo](https://user-images.githubusercontent.com/6503508/150685892-6b8b4bd8-631c-420f-b223-7be95bcb8f63.gif)
