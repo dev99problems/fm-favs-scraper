@@ -2,6 +2,4 @@ node_modules/
 
 .DS_Store
 .idea
-**/env.js
-TODO.txt
-config.js
+courses.json
