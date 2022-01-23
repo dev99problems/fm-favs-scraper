@@ -1,13 +1,28 @@
 const pptr = require('puppeteer');
 
-(async () => {
-  const browser = await pptr.launch();
+require('./config');
+const { openSite, goToFavsPage, signIn } = require('./flows');
+const { scrapData } = require('./scraper');
 
-  // const browser = await puppeteer.launch();
+const slowdown = global.cfg.dev ? {slowMo: 20} : {};
+
+(async () => {
+  const browser = await pptr.launch({
+    headless: false,
+    defaultViewport: {
+      width: 1200,
+      height: 900
+    },
+    ...slowdown
+  });
+
   const page = await browser.newPage();
-  await page.goto('https://example.com');
-  await page.screenshot({ path: 'example.png' });
+
+  await openSite(page)
+  await signIn(page)
+  await goToFavsPage(page);
+
+  await scrapData(page);
 
   await browser.close();
 })();
-
