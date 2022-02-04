@@ -17,9 +17,9 @@ I have near 35 courses `bookmarked`, so I decided it will be much more convenien
 
 ## Tooling  🛠️
 
-All the magic is done with `Puppeeteer`, which goes through the **Sign in** process, finding the right page and fetching the needed meta data.
-Next phase is writing down this info into `Airtable` page with a help of [Airtable.js](https://github.com/Airtable/airtable.js) and voilà.
-If the `Airtable.js` documentation may not look very **comprehensive**, a lot more **useful** docs can be found at https://airtable.com/api 
+All the magic is done with `Puppeeteer`, which goes through the **Sign in** process, finds the right page and fetches the needed meta data.
+Next phase is writing down this information into `Airtable` page with a help of [Airtable.js](https://github.com/Airtable/airtable.js) and voilà.
+If the `Airtable.js` documentation does not look very **comprehensive**, a lot more **useful** docs can be found at https://airtable.com/api 
 
 ## Screencast  💻
 
